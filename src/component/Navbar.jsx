@@ -26,7 +26,7 @@ function Navbar() {
                     <li><Link to="about" activeClass="active .nav-link" spy={true} offset={-70}  smooth={true} duration={100}>About</Link></li>
                     <li><Link to="skills" activeClass="active .nav-link" spy={true} smooth={true} offset={-70} duration={100}>Skills</Link></li>
                     <li><Link to="projects" activeClass="active .nav-link" spy={true} smooth={true} offset={-70} duration={100}>Projects</Link></li>
-                    <li><Link to="contact" activeClass="active .nav-link"spy={true} smooth={true} offset={-70} duration={100}>Contact</Link></li>
+                    <li><Link to="contact" activeClass="active .nav-link" spy={true} smooth={true} offset={-70} duration={100}>Contact</Link></li>
                     
                 </ul>
                 <div className="nav-link-bar" onClick={()=>setIsOpen(!isOpen) }>

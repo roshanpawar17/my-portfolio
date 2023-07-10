@@ -21,8 +21,8 @@ function Contact() {
     })
   }, [])
 
-  function formSubmition(e){
-    e.preventDefault();  
+  function clickOnBtn(){
+      
     alert("Demo form");
     setFormdata({name: "",email: "", message: ""})
   }
@@ -47,7 +47,7 @@ function Contact() {
           <p>Contact me</p>
         </div>
         <div className="contact-me-form" >
-          <form onSubmit={formSubmition} method='post'>
+          <form >
             <div className="form-group">
               <label htmlFor="name">Name:</label>
               <input type="text" id="name" name="name" value={formdata.name} onChange={handleForm}required />
@@ -61,7 +61,7 @@ function Contact() {
               <textarea id="message" name="message" value={formdata.message} onChange={handleForm}rows="4" placeholder='Write your project ' required></textarea>
             </div>
             <div className="form-group">
-              <button type='submit'>Submit</button>
+              <button onClick={clickOnBtn}>Submit</button>
             </div>
           </form>
         </div>
