@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react'
+import React, { useEffect, useState } from 'react'
 import Aos from "aos";
 
 
@@ -7,12 +7,36 @@ import 'aos/dist/aos.css';
 
 
 function Contact() {
+
+  const [formdata, setFormdata]=useState({
+    name: "",
+    email: "",
+    message: ""
+  })
+
   useEffect(() => {
     Aos.init({
       duration: 1200,
       easing: 'ease-in'
     })
   }, [])
+
+  function formSubmition(e){
+    e.preventDefault();  
+    alert("Demo form");
+    setFormdata({name: "",email: "", message: ""})
+  }
+
+  function handleForm(e){
+    let value=e.target.value;
+    let name=e.target.name;
+    
+    setFormdata(prev=>({
+      ...prev,
+      [name]:value
+    }))
+  }
+
 
   return (
     
@@ -22,22 +46,22 @@ function Contact() {
           <h1>Get in Touch </h1>
           <p>Contact me</p>
         </div>
-        <div className="contact-me-form">
-          <form >
+        <div className="contact-me-form" >
+          <form onSubmit={formSubmition} method='post'>
             <div className="form-group">
               <label htmlFor="name">Name:</label>
-              <input type="text" id="name" name="name" required />
+              <input type="text" id="name" name="name" value={formdata.name} onChange={handleForm}required />
             </div>
             <div className="form-group">
               <label htmlFor="email">Email:</label>
-              <input type="email" id="email" name="email" required />
+              <input type="email" id="email" name="email" value={formdata.email} onChange={handleForm}required />
             </div>
             <div className="form-group">
               <label htmlFor="message">Project Name:</label>
-              <textarea id="message" name="message" rows="4" placeholder='Write your project ' required></textarea>
+              <textarea id="message" name="message" value={formdata.message} onChange={handleForm}rows="4" placeholder='Write your project ' required></textarea>
             </div>
             <div className="form-group">
-              <button type="submit">Submit</button>
+              <button type='submit'>Submit</button>
             </div>
           </form>
         </div>
