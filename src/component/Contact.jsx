@@ -22,7 +22,7 @@ function Contact() {
   }, [])
 
   function formSubmit(e){
-    e.preventDefault();++  
+    e.preventDefault();  
     alert("Demo form");
     setFormdata({name: "",email: "", message: ""})
   }
