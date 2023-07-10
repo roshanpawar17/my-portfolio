@@ -1,0 +1,30 @@
+.project-container{
+    margin-top: 10px;
+}
+
+.projects{
+    /* border: 2px solid red; */
+    display: flex;
+    justify-content: center;
+    margin: 10px;
+    flex-wrap: wrap;
+    flex-direction: row;
+    min-height: 70vh;
+}
+
+
+
+.project{
+    margin: 10px;
+}
+
+.project img{
+    padding: 20px;
+    
+}
+
+@media (max-width: 768px){
+    .project-container{
+        margin-top: 20px;
+    }
+}

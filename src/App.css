@@ -1,0 +1,35 @@
+.container-1{
+    /* border: 2px solid red; */
+    width: 80vw;
+    margin: auto;
+    background-color: rgba(236, 234, 234, 0.205);
+}
+
+
+.section {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    /* border: 2px solid; */
+  }
+  
+  .active {
+    color: red;
+    font-weight: bold;
+    text-decoration-line: none;
+  }
+  
+@media (max-width: 870px) {
+    .container-1{
+        
+        width: 100vw;
+        margin: auto;
+        
+    }
+    
+
+}
+
+

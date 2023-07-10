@@ -1,0 +1,43 @@
+@import url('https://fonts.googleapis.com/css2?family=Caprasimo&family=Lobster&family=Poppins&family=Ubuntu&family=Ysabeau+Infant:wght@400;500&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  
+  
+.footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+    
+}
+
+.footer p {
+    font-family: Arial, sans-serif;
+    font-family: 'Ysabeau Infant', sans-serif;
+    font-size: 16px;
+    margin-bottom: 10px;
+  }
+
+  .footer .logoes{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 10px;
+  }
+  
+  .footer .logoes a{
+    color: white;
+    font-size: 22px;
+    margin: 0 5px;
+    
+  }
+  
+  @media (max-width: 600px) {
+    .footer {
+      font-size: 12px;
+    }
+  }

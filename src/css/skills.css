@@ -1,0 +1,57 @@
+@import url('https://fonts.googleapis.com/css2?family=Caprasimo&family=Lobster&family=Poppins&family=Ubuntu&family=Ysabeau+Infant:wght@400;500&display=swap');
+
+.skills-container{
+    /* border: 2px solid red; */
+    margin-top: 2em;
+}
+
+.heading{
+    text-align: center;
+}
+
+.heading h1{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.heading p{
+    font-family: 'Poppins', sans-serif;
+}
+
+.cards{
+    /* border: 2px solid red; */
+    box-sizing: border-box;
+    width: 77vw;
+    min-height: 70vh;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+    flex-direction: row;
+    padding: 25px;
+}
+
+.cards .card{
+    border: 2px solid rgb(23, 174, 201) ;
+    background-color: rgb(231, 230, 230) ;
+    color: black;
+    min-width: 10rem;
+    min-height: 25vh;
+    border-radius: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 10px;
+    padding-top: 10px;
+    box-shadow: 3px 3px 2px 2px black;
+
+}
+
+.cards .card img{
+    width: 45px;
+    height: 45px;
+}
+
+.cards .card .card-title, p{
+    text-align: center;
+} 

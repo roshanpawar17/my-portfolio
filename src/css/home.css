@@ -1,0 +1,139 @@
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+.home-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 20px;
+    /* border: 2px solid; */
+  }
+
+  .home-container img{
+    height: 60px;
+    width: 60px;
+    animation: move 2s linear infinite;
+
+  }
+
+  @keyframes move {
+    0% {
+        transform: rotate(0deg);
+      }
+      25% {
+        transform: rotate(20deg);
+      }
+      50% {
+        transform: rotate(0deg);
+      }
+      75% {
+        transform: rotate(-20deg);
+      }
+      100% {
+        transform: rotate(0deg);
+      }
+  }
+  
+    
+  .info {
+    text-align: center;
+    margin-top: 20px;
+  }
+  
+  .info .name {
+    color: #000;
+    font-weight: bold;
+  }
+
+  .type-writer{
+    font-size: 20px;
+  }
+
+  .info p{
+    /* border: 2px solid; */
+    padding: 10px;
+    font-size: 20px;
+  }
+  
+  .scroll {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    margin-top: 40px;
+    /* border: 2px solid; */
+    /* min-width: 200px; */
+  }
+  
+  
+  .scroll-btn button{
+    border: none;
+    min-width: 100px;
+    background-color: white;
+  }
+  
+  .scroll-arrow {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: #000;
+    color: #fff;
+    outline: 2px solid black;
+    outline-offset: 2px;
+    animation: arrow-move 2s ease-in-out infinite;
+  }
+
+  @keyframes arrow-move {
+    0%{
+        transform: translateY(13px);
+    }
+    25%{
+        transform: translateY(0px);    
+    }
+    50%{
+        transform: translateY(13px);
+    }
+    75%{
+        transform: translateY(0px);
+    }
+    100%{
+        transform: translateY(13px);
+    }
+  }
+  
+  h2, p, h5 {
+    margin: 0;
+  }
+  
+  @media (max-width: 768px) {
+    .home-container {
+      padding: 10px;
+    }
+
+    .info p{
+      /* border: 2px solid; */
+      padding: 10px;
+      font-size: 17px;
+    }
+         
+    .scroll-btn {
+      width: 30px;
+      height: 30px;
+    }
+    
+    .scroll-ball {
+      width: 15px;
+      height: 15px;
+    }
+  }
+  
