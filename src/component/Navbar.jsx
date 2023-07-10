@@ -6,7 +6,7 @@ import "../css/navbar.css"
 import logo from "../assets/logo.svg"
 
 import { AiOutlineBars } from "react-icons/ai";
-import { RxCross1 } from "react-icons/Rx";
+import { RxCross1 } from "react-icons/rx";
 
 
 function Navbar() {
