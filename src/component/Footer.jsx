@@ -18,7 +18,7 @@ function Footer() {
       </div>
       <h6>Contact More</h6>
       <p>Email : roshanpawar119@gmail.com</p>
-      <p>Contact : +91 8104022916</p>
+      
     </div>
   )
 }
